@@ -124,12 +124,10 @@ $("#dob").blur(function(){
 		$sql = "INSERT INTO user_details1(name,cno,mail,dob,uname,upass,address,token) VALUES ('$name','$cno','$mail','$dob','$uname','$upass','$address','$token')";
 		
 		if(mysqli_query($conn, $sql)){
-			?>
-      <script type='text/javascript'>
-      alert("data stored in a database successfully:)");
-      </script>
+		
+       echo'<div class="alert alert-success" role="alert">This is a success alert—check it out!</div>';
       
-      <?php
+      
 
 			
 		} else{
