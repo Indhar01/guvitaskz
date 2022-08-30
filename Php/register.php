@@ -28,7 +28,7 @@
             
             <textarea class="form-control" placeholder="Enter Your Address" minlength="10" maxlength="200" name="address" id="addr" required></textarea>
 			<button type="submit" name="regbutt" id="regbutt" class="form-control">Register</button>
-      <a href="index.html">Login</a>
+      <a href="../Html/index.html">Login</a>
 		</form>
 
     </div>
