@@ -117,9 +117,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
         <script src="../Js/profile.js" type="text/javascript"></script>
-        <script>
+        <script type="text/javascript">
 		$("#update").click(function(){
-		</script>
+	</script>
         <?php
       if(isset($_POST['cno']) &&
       isset($_POST['address'])  && 
@@ -131,12 +131,13 @@
                     $result = mysqli_query($conn, $query);
 	      if($result){
                     ?>
-                     <script type="text/javascript">
+         <script type="text/javascript">
             alert("Update Successfull.");
             window.location = "index.html";
         </script>
         <?php
-		      } else{
+		      } 
+	      else{
 			echo "ERROR: Hush! Sorry $sql. "
 				. mysqli_error($conn);
 		}
@@ -144,7 +145,7 @@
 
 ?>  
 	<script>
-}
+
    
 
     
