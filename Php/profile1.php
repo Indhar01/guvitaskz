@@ -145,12 +145,7 @@
 ?>  
 	<script>
 }
-    else
-    {
-      $("html, body").animate({scrollTop: 0}, 250);   
-      $("#error").css("visibility", "visible");
-      $("#error").text('Try again');
-    }
+   
 
     
   });
