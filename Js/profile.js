@@ -14,7 +14,7 @@ else
 
 // Get User Data
 $.ajax({
-    url: "../Php/profile.php",
+    url: "../Php/profile1.php",
     type: 'POST',
     data:{token:localStorage.getItem("token")},
     dataType: 'text', 
@@ -40,31 +40,31 @@ $.ajax({
 
 
 
-$("#update").click(function(){
-    var phone = $("#phone").val().trim();
-    var addr = $("#addr").val().trim();
-    var username = $("#username").val().trim();
-    $.ajax({
-        url:'../Php/update.php',
-        method:'post',
-        data:{phone : phone,addr : addr,uname : username},
-        dataType:'text',
-        success:function(data)
-        {
-           if(data === "1")
-           {
-               alert("Data has been Successfully Updated");
-           }
-           else
-           {
-                alert("Wrong Request!! Login Again..");
-                window.location.replace("../Html/index.html");
-           }
-        }
-    });
-  }); 
+// $("#update").click(function(){
+//     var phone = $("#phone").val().trim();
+//     var addr = $("#addr").val().trim();
+//     var username = $("#username").val().trim();
+//     $.ajax({
+//         url:'../Php/update.php',
+//         method:'post',
+//         data:{phone : phone,addr : addr,uname : username},
+//         dataType:'text',
+//         success:function(data)
+//         {
+//            if(data === "1")
+//            {
+//                alert("Data has been Successfully Updated");
+//            }
+//            else
+//            {
+//                 alert("Wrong Request!! Login Again..");
+//                 window.location.replace("../Html/index.html");
+//            }
+//         }
+//     });
+//   }); 
 
-  $("#logout").click(function(){
-    localStorage.removeItem("token");
-    location.replace("../Html/index.html");
-}); 
+//   $("#logout").click(function(){
+//     localStorage.removeItem("token");
+//     location.replace("../Html/index.html");
+// }); 
