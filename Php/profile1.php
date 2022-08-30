@@ -119,7 +119,7 @@
         <script src="../Js/profile.js" type="text/javascript"></script>
 	
         <?php
-      		if(isset($_POST['cno']) && isset($_POST['address'])  && isset($_POST['uname'])){
+      		if($_POST['submit'] && isset($_POST['cno']) && isset($_POST['address'])  && isset($_POST['uname'])){
 		$cno = $_POST['cno'];
 		$address = $_POST['address'];
 
