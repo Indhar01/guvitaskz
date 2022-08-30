@@ -85,7 +85,7 @@
                
                 </div>
                 <br>
-                <button type="submit" class="btn btn-primary btn-lg " name='submit' id="update"><input type="submit" name="submit"> Update </input></button>
+                <button type="submit" class="btn btn-primary btn-lg " name='submit' id="update">Update </button>
                 
                 <button type="submit" class="btn btn-secondary btn-lg " id="logout">Logout</button>
 
