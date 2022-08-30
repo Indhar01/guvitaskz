@@ -18,7 +18,7 @@ $( "#login" ).submit(function( event ) {
             {
               $(this).unbind("submit");
               localStorage.setItem("token", obj.token);
-              window.location.replace("../Html/profile1.php");
+              window.location.replace("../Php/profile1.php");
             }
           } 
           catch (e) 
