@@ -125,7 +125,7 @@ $("#dob").blur(function(){
 		
 		if(mysqli_query($conn, $sql)){
 		
-       echo'<div class="alert alert-success" role="alert">This is a success alert—check it out!</div>';
+       echo'<div class="alert alert-success" role="alert">successfully Registered!</div>';
       
       
 
