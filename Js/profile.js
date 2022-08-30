@@ -13,30 +13,30 @@ else
 });
 
 // Get User Data
-$.ajax({
-    url: "../Php/profile1.php",
-    type: 'POST',
-    data:{token:localStorage.getItem("token")},
-    dataType: 'text', 
-    success: function(data) {
-        const obj = JSON.parse(data);
-        if(obj.status === "1")
-        {
-            $("#userid").val(obj.userid);
-            $("#name").val(obj.name);
-            $("#username").val(obj.uname);
-            $("#useremail").val(obj.email);
-            $("#phone").val(obj.cno);
-            $("#dob").val(obj.dob);
-            $("#addr").val(obj.addr);
-        }
-        else
-        {
-            location.replace("../Html/403.html");
-        }
+// $.ajax({
+//     url: "../Php/profile1.php",
+//     type: 'POST',
+//     data:{token:localStorage.getItem("token")},
+//     dataType: 'text', 
+//     success: function(data) {
+//         const obj = JSON.parse(data);
+//         if(obj.status === "1")
+//         {
+//             $("#userid").val(obj.userid);
+//             $("#name").val(obj.name);
+//             $("#username").val(obj.uname);
+//             $("#useremail").val(obj.email);
+//             $("#phone").val(obj.cno);
+//             $("#dob").val(obj.dob);
+//             $("#addr").val(obj.addr);
+//         }
+//         else
+//         {
+//             location.replace("../Html/403.html");
+//         }
 
-    }
-});
+//     }
+// });
 
 
 
