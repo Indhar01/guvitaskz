@@ -134,10 +134,7 @@
         </script>
         <?php
              }  
-	else
-{
-    echo"<script>location.replace('../Html/403.html')</script>";
-}
+
 ?>  
     
 </body>
